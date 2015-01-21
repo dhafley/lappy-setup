@@ -1,0 +1,40 @@
+Host david
+    User david.hafley
+    HostName david.myedu.me
+
+Host *.cloud.local *.bb
+    User    dhafley
+
+Host *.mhint
+    User    dhafley
+    StrictHostKeyChecking no
+
+Host master.myedu.ws
+    User dhafley
+
+Host m
+
+Host *.myedu.ws
+	User 	djh
+
+Host bastion+*
+    User dhafley
+    ProxyCommand ssh -T -a $(echo %h |cut -d+ -f1).cloud.bb nc $(echo %h |cut -d+ -f2) %p 2>/dev/null
+    ControlMaster auto
+    ControlPath ~/.ssh/ssh-control_%r@%h:%p
+    StrictHostKeyChecking no
+    #UserKnownHostsFile /dev/null
+
+
+Host qbert+*
+    User dhafley
+    ProxyCommand ssh -T -a qbert-master.cloud.bb nc qbert-$(echo %h |cut -d+ -f2).cloud.bb %p 2>/dev/null
+    StrictHostKeyChecking no
+
+Host qbertip+*
+    User dhafley
+    ProxyCommand ssh -T -a qbert-master.cloud.bb nc $(echo %h |cut -d+ -f2) %p 2>/dev/null
+    StrictHostKeyChecking no
+
+Host *
+	User	david.hafley

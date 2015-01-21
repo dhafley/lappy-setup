@@ -1,0 +1,6 @@
+- hosts: all
+  roles:
+      - role: workstation
+  vars:
+      - home: /Users/{{ ansible_user_id }}
+      - project_root: /{{ home }}/environment

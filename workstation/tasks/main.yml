@@ -1,0 +1,17 @@
+---
+
+- name: Make sure required home directories exist
+  file: name={{ item }} state=directory
+  with_items:
+      - '{{ home }}/code'
+
+- name: Install required software
+  homebrew: name={{ item }} state=present
+  with_items:
+    - git
+    - vim
+
+      
+
+- include: templates.yml
+- include: vim.yml

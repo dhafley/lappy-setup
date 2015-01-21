@@ -1,0 +1,16 @@
+# .bashrc
+export PS1='[\u@\h \W]\$ '
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+if [ -f /etc/bash_completion.d/git ]; then
+    source /etc/bash_completion.d/git
+fi
+
+
+alias gh='history | grep ' 
+alias x='exit'
+alias ll='ls -l'
