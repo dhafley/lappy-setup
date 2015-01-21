@@ -2,20 +2,11 @@ Host david
     User david.hafley
     HostName david.myedu.me
 
-Host *.cloud.local *.bb
-    User    dhafley
+Host bitbucket.org
+    IdentityFile ~/.ssh/keys/bitbucket_rsa
 
-Host *.mhint
-    User    dhafley
-    StrictHostKeyChecking no
-
-Host master.myedu.ws
-    User dhafley
-
-Host m
-
-Host *.myedu.ws
-	User 	djh
+Host github.com
+    IdentityFile ~/.ssh/keys/github_rsa
 
 Host bastion+*
     User dhafley
