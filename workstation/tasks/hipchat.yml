@@ -1,6 +1,0 @@
-- name: send personal notification to HipChat
-  hipchat: 
-    token=Ttk8zsdP9LauqRtTeWO7Rpd5iRC0NUaBtfPi4MTr 
-    room="David Hafley" 
-    msg="Ansible task finished"
-    version=2
