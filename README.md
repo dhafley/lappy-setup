@@ -5,7 +5,14 @@ For years, I've setup basic templates and programs using a shell script.  This h
 
 Starting a new job this week, felt like it was time to refresh this approach.  The motiviation started for me after reading [this](http://www.eightbitraptor.com/post/bootstrapping-osx-ansible) post.
 
-## HowTo
-To setup your mac just like mine, clone the repo and execute bootstrap.sh.  
+This project attempts to setup basic configuration (vimrc, ssh config, etc), commonly used homebrew formulas, and homebrew casks.
 
-If you are not interested in having a workstation just like mine, I'd suggest starting in workstation/main.yml to see what I install and how.
+## Getting Started 
+The entry point into this application is bootstap.sh, which checks for the installation of ansible and then executes ansible the site playbook.
+
+To configure, take a look at site.yml and confirm variables I have in place.  
+
+Next, take a look at workstation/task/main.yml to see what is installed from homebrew and homebrew casks.
+
+Please fork and submit pull requests!
+

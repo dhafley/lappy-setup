@@ -28,8 +28,5 @@
       - virtualbox
       - evernote
 
-
-
-
 - include: templates.yml
 - include: vim.yml
