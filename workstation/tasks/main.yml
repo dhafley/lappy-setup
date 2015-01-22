@@ -21,8 +21,15 @@
       - atom
       - firefox
       - textmate
+      - spectacle
+      - iterm2
+      - spotify
+      - skype
+      - virtualbox
+      - evernote
 
-      
+
+
 
 - include: templates.yml
 - include: vim.yml
