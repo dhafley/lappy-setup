@@ -3,4 +3,4 @@
       - role: workstation
   vars:
       - home: /Users/{{ ansible_user_id }}
-      - project_root: /{{ home }}/environment
+      - project_root: /{{ home }}/code/lappy-setup
