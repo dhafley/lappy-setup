@@ -5,11 +5,22 @@
   with_items:
       - '{{ home }}/code'
 
+
 - name: Install required software
   homebrew: name={{ item }} state=present
   with_items:
     - git
     - vim
+    - cask
+    - brew-cask
+
+
+- name: Install desktop applications
+  homebrew_cask: name={{ item }} state=present
+  with_items:
+      - atom
+      - firefox
+      - textmate
 
       
 
