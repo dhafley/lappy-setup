@@ -4,3 +4,4 @@
   vars:
       - home: /Users/{{ ansible_user_id }}
       - project_root: /{{ home }}/code/lappy-setup
+      - files: /{{ home }}/Dropbox/configuration

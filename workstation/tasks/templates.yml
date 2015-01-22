@@ -1,18 +1,17 @@
 - name: move bashrc
-  template: src={{ project_root }}/workstation/files/bashrc dest={{ home }}/.bashrc 
+  template: src={{ files }}/bashrc dest={{ home }}/.bashrc
 
 - name: move vimrc
-  template: src={{ project_root }}/workstation/files/vimrc dest={{ home }}/.vimrc
+  template: src={{ files }}/vimrc dest={{ home }}/.vimrc
 
 - name: move gitignore
-  template: src={{ project_root }}/workstation/files/gitignore dest={{ home }}/.gitignore
+  template: src={{ files }}/gitignore dest={{ home }}/.gitignore
 
 - name: move gitconfig
-  template: src={{ project_root }}/workstation/files/gitconfig dest={{ home }}/.gitconfig
+  template: src={{ files }}/gitconfig dest={{ home }}/.gitconfig
 
 - name: move ssh config
-  template: src={{ project_root }}/workstation/files/config dest={{ home }}/.ssh/config
+  template: src={{ files }}/config dest={{ home }}/.ssh/config
 
 - name: move my dot conf
-  template: src={{ project_root }}/workstation/files/my.cnf dest={{ home }}/.my.cnf
-
+  template: src={{ files }}/my.cnf dest={{ home }}/.my.cnf
