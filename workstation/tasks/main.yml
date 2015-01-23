@@ -27,6 +27,8 @@
       - skype
       - virtualbox
       - evernote
+      - send-to-kindle
+      
 
 - include: templates.yml
 - include: vim.yml
